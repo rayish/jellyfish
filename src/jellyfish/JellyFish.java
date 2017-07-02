@@ -76,17 +76,7 @@ public class JellyFish {
 		int comPlay = 0;
 		if (quackMode == true) {	//インチキモード
 			System.out.println("インチキモード発動");
-			switch(youCode) {
-			case 0:
-				comPlay = 2;
-				break;
-			case 1:
-				comPlay = 0;
-				break;
-			case 2:
-				comPlay = 1;
-				break;
-			}
+			comPlay = (youCode - 1 + 3) % 3;
 		} else	{
 			comPlay = (int)(Math.random()*3);
 		}
