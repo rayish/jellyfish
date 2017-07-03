@@ -86,8 +86,8 @@ public class JellyFish {
 	//---------------------------
 	//判定処理
 	//---------------------------
-	public static int JudgmentJam(int a, int b) {
-		int judg = (a - b + 3) % 3;	//じゃんけんの結果判定方法
+	public static int JudgmentJam(int manplayer, int complayer) {
+		int judg = (manplayer - complayer + 3) % 3;	//じゃんけんの結果判定方法
 		if (judg == 1) {
 			comScore++;
 			System.out.print("Com 勝ち");
